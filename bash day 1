@@ -1,1 +1,23 @@
+BASH DAY UNO
 
+history #can use grep# history | grep ***
+or ctrl + r to search through commands
+
+you can comment a cmd on the term
+
+history | grep ls #used to search all the ls cmds
+you can use # to tag your cmds to easily ctrl + r them
+
+ctrl + a to get to beggining of cmd u are typing
+
+getting help
+man ***
+G to get to end
+g to get to start
+q to quit
+
+> - redirector
+alias cat='echo "dog"'
+>>> cat /etc/passwd
+>>> dog /etc/passwd
+get around alias by using abs path, found with which
