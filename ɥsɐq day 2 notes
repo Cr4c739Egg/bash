@@ -17,6 +17,8 @@ sort > sorts according to ascii table
 -u > uniquely
 -nr > reverse n
 -t'+' field separator
+sort -k > does collumns
+sort -k2n > sorts by second collumn numerically. -t',' > delimits on the ,
 
 uniq > selects content uniqly, must be sorted
 -c > counts
