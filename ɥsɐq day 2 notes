@@ -1,0 +1,34 @@
+GREP
+remove errors + 2>/dev/null
+
+curl cht.sh/*cmd*
+
+ctrl + r to find cmds
+
+tag cmds using #
+
+ctrl + shift + x to blow up a window in terminator
+
+use regex in find
+find *path* -iname "*[^~].txt" # the [^] includes the not or ^ specifying to exlude the character
+
+sort > sorts according to ascii table
+-n > numerically
+-u > uniquely
+-nr > reverse n
+-t'+' field separator
+
+uniq > selects content uniqly, must be sorted
+-c > counts
+-u > only uniq lines
+-d > only dupe lines
+
+awk > pattern searching and proccess
+awk -F: '{print $1}' > prints first field delimmited by :
+awk '{print $2}' > prints by first field delimmited by white space by default
+awk -F: '($3 == 0) {print $1}' /etc/passwd
+
+sed > stream editor for filtering and transforming text
+sed 's/abc/123/" > replaces first occurence of abc to 123
+sed 's/abc/123/g' > replaces all occurences
+sed '/sus/d' deletes lines with sus in them
