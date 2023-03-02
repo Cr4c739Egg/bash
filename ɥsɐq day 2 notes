@@ -27,10 +27,27 @@ uniq > selects content uniqly, must be sorted
 
 awk > pattern searching and proccess
 awk -F: '{print $1}' > prints first field delimmited by :
-awk '{print $2}' > prints by first field delimmited by white space by default
+awk '{print $2}' > prints by first field delimmited by variable amount of white space by default
 awk -F: '($3 == 0) {print $1}' /etc/passwd
+
+
+
 
 sed > stream editor for filtering and transforming text
 sed 's/abc/123/" > replaces first occurence of abc to 123
 sed 's/abc/123/g' > replaces all occurences
 sed '/sus/d' deletes lines with sus in them
+
+
+conditonal ops
+-e > file exists?
+-f > -e and is reg file
+-d > -e and directory
+== > strings, is equal to
+!= > not ==
+
+if letters in if statements, use number ops, vice versa
+
+yes == yes <> 1 -eq 1
+
+
