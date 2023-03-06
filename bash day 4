@@ -1,0 +1,23 @@
+LOOPS
+for loop:
+
+for i in {1..10} #i is the loop initialized var, the list can be strings sep by spaces, output of a cmd, an array etc
+do 
+  echo $i
+done
+
+if [[ ]]
+
+fi
+
+counter=1
+while [[$counter -le 10 ]] # until works too, but the other way. until meets the condition, opposed to while the cond is true
+do
+  echo $counter
+  ((counter++))
+done
+echo "All done!"
+
+break breaks out the current loop
+
+continue moves on to the next iteratons
